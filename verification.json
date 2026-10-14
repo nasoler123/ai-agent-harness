@@ -1,0 +1,26 @@
+{
+  "checks": [
+    {
+      "case": "Prefijo estable conserva clave",
+      "passed": true
+    },
+    {
+      "case": "Orden del catálogo no cambia clave",
+      "passed": true
+    },
+    {
+      "case": "Cambiar capacidades cambia clave",
+      "passed": true
+    },
+    {
+      "case": "Cambiar canal cambia clave",
+      "passed": true
+    },
+    {
+      "case": "Cambiar plantilla cambia clave",
+      "passed": true
+    }
+  ],
+  "passed": 5,
+  "network": "forbidden"
+}
