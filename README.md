@@ -2,25 +2,15 @@
 
 Capabilities, context and execution rules around an AI agent.
 
-[Watch the frontend](#watch-the-frontend) · [Run the sample](#run-the-sample) · [Architecture](docs/architecture.md) · [Design decisions](docs/decisions.md) · [Code tour](docs/code-tour.md) · [Español](docs/LEEME.md)
+[Watch the agent](#watch-the-agent) · [Run the sample](#run-the-sample) · [Architecture](docs/architecture.md) · [Design decisions](docs/decisions.md) · [Code tour](docs/code-tour.md) · [Español](docs/LEEME.md)
 
-## Watch the frontend
+## Watch the agent
 
-Guided frontend demos with synthetic data: see the chat, custom agent configuration and business memory. These are scripted interface walkthroughs from the earlier product generation; the harness implementation is documented below.
+**Chals AI — AI Assistant for Google Sheets.** See the assistant inside the spreadsheet interface. The local Python sample below focuses on prompt-cache key construction.
 
-### Custom agent creation · 85s
+[![Play Chals AI — AI Assistant for Google Sheets](https://i.ytimg.com/vi/Oo4Bd8iGeUY/hqdefault.jpg)](https://www.youtube.com/watch?v=Oo4Bd8iGeUY)
 
-https://github.com/user-attachments/assets/418023e3-7c39-4082-ba8b-140ba44dab4a
-
-[Open the full-screen demo](https://chalsai.com/demo.html?script=custom-agents&utm_source=github&utm_medium=portfolio&utm_campaign=ai-agent-harness) · [Download MP4](docs/demos/custom-agents.mp4)
-
-### Memory and business context · 18s
-
-https://github.com/user-attachments/assets/f6010d59-6e71-4ab9-a506-86d2e1059547
-
-[Open the full-screen demo](https://chalsai.com/demo.html?script=memory-brain&utm_source=github&utm_medium=portfolio&utm_campaign=ai-agent-harness) · [Download MP4](docs/demos/memory-brain.mp4)
-
-[Media provenance](docs/demos/manifest.json).
+[Watch on YouTube](https://www.youtube.com/watch?v=Oo4Bd8iGeUY) · [Media provenance](docs/demos/manifest.json).
 
 ![AI Agent Harness illustrated architecture](docs/overview.svg)
 
