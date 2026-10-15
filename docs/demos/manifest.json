@@ -1,0 +1,33 @@
+{
+  "kind": "scripted_frontend_walkthroughs",
+  "data": "synthetic",
+  "source_repository": "nasoler123/asesor_virtual_repo",
+  "source_commit": "ed7f4adc4aa50fc8d2ba7457c3b9ff38fe69ffc8",
+  "transformation": "None; MP4 files copied byte-for-byte.",
+  "assets": [
+    {
+      "file": "custom-agents.mp4",
+      "script": "custom-agents",
+      "source_path": "frontend/public/demos/custom-agents.mp4",
+      "sha256": "cf3e62e0ffedd7e6eab457df76e3b7e0b8e47cbbeb3359eadb33c42cc06edf6c",
+      "duration_seconds": 85.016835,
+      "bytes": 373760,
+      "codec": "h264",
+      "width": 960,
+      "height": 600,
+      "github_attachment_url": "https://github.com/user-attachments/assets/418023e3-7c39-4082-ba8b-140ba44dab4a"
+    },
+    {
+      "file": "memory-brain.mp4",
+      "script": "memory-brain",
+      "source_path": "frontend/public/demos/memory-brain.mp4",
+      "sha256": "15fd48e94442ae14a6c03bbf1f1434b3d42e632e1be28e4b0ab48f44500c3731",
+      "duration_seconds": 18.010209,
+      "bytes": 194650,
+      "codec": "h264",
+      "width": 960,
+      "height": 600,
+      "github_attachment_url": "https://github.com/user-attachments/assets/f6010d59-6e71-4ab9-a506-86d2e1059547"
+    }
+  ]
+}
