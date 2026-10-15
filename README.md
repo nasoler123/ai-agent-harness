@@ -2,7 +2,25 @@
 
 Capabilities, context and execution rules around an AI agent.
 
-[Run the sample](#run-the-sample) · [Architecture](docs/architecture.md) · [Design decisions](docs/decisions.md) · [Code tour](docs/code-tour.md) · [Español](docs/LEEME.md)
+[Watch the frontend](#watch-the-frontend) · [Run the sample](#run-the-sample) · [Architecture](docs/architecture.md) · [Design decisions](docs/decisions.md) · [Code tour](docs/code-tour.md) · [Español](docs/LEEME.md)
+
+## Watch the frontend
+
+Guided frontend demos with synthetic data: see the chat, custom agent configuration and business memory. These are scripted interface walkthroughs from the earlier product generation; the harness implementation is documented below.
+
+### Custom agent creation · 85s
+
+![](docs/demos/custom-agents.mp4)
+
+[Open the full-screen demo](https://chalsai.com/demo.html?script=custom-agents&utm_source=github&utm_medium=portfolio&utm_campaign=ai-agent-harness) · [Download MP4](docs/demos/custom-agents.mp4)
+
+### Memory and business context · 18s
+
+![](docs/demos/memory-brain.mp4)
+
+[Open the full-screen demo](https://chalsai.com/demo.html?script=memory-brain&utm_source=github&utm_medium=portfolio&utm_campaign=ai-agent-harness) · [Download MP4](docs/demos/memory-brain.mp4)
+
+[Media provenance](docs/demos/manifest.json).
 
 ![AI Agent Harness illustrated architecture](docs/overview.svg)
 
