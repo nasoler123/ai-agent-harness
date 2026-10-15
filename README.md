@@ -1,12 +1,28 @@
 # AI Agent Harness
 
-Capabilities, context and execution rules around an AI agent.
+**The execution layer behind Chals AI’s assistant**
 
-[Watch the agent](#watch-the-agent) · [Run the sample](#run-the-sample) · [Architecture](docs/architecture.md) · [Design decisions](docs/decisions.md) · [Code tour](docs/code-tour.md) · [Español](docs/LEEME.md)
+*A Chals AI case study — built by Ignacio Soler.*
+
+<a id="the-project"></a>
+
+I built the execution layer that connects an AI assistant to skills, tools and application capabilities. It manages which tools are available, how calls are dispatched, how context is assembled and how execution handles failures and retries.
+
+I built this project end to end on my own, using AI tools for all programming. My work covered product definition, technical decisions, implementation, integration and validation.
+
+[Watch the agent](#watch-the-agent) · [Explore the implementation](#explore-the-implementation) · [Run the component sample](#run-the-component-sample) · [Español](docs/LEEME.md)
+
+## What I built
+
+- Skill loading, capability controls and tool dispatch.
+- Context-budget handling and prompt-cache key construction.
+- Recovery logic and persistent execution events.
+
+**Status:** Implemented during May–July 2026 as part of an earlier Chals AI product generation.
 
 ## Watch the agent
 
-**Chals AI — AI Assistant for Google Sheets.** See the assistant inside the spreadsheet interface. The local Python sample below focuses on prompt-cache key construction.
+**Chals AI — AI Assistant for Google Sheets.** This product video shows the assistant inside Google Sheets. The technical material below focuses on selected components of the agent implementation.
 
 [![Play Chals AI — AI Assistant for Google Sheets](https://i.ytimg.com/vi/Oo4Bd8iGeUY/hqdefault.jpg)](https://www.youtube.com/watch?v=Oo4Bd8iGeUY)
 
@@ -14,19 +30,9 @@ Capabilities, context and execution rules around an AI agent.
 
 ![AI Agent Harness illustrated architecture](docs/overview.svg)
 
-## The project
+## Explore the implementation
 
-An agent needs a stable execution boundary: which tools are available, which capability owns them, what happens when a call fails, how much context can be sent and how execution survives retries.
-
-**My work.** I assembled the agent and its skill session, registry and dispatch surface, with capability gates, concrete tool contracts, loop recovery, context-budget handling, prompt-cache options and durable run events. I led the product and technical construction, using AI-assisted development alongside integration and verification.
-
-**Period.** May–July 2026; historical product harness.
-
-**Project outcome.** A harness implemented as part of Chals AI. This sample establishes selected component behavior; it does not establish complete acceptance in every agent host.
-
-## What you can inspect here
-
-The executable sample checks the original local prompt-cache key builder. Skill loading, tool dispatch, budget management and event persistence are documented excerpts, not an independently bootable agent in this repository.
+The runnable component contains the original local prompt-cache key builder. Selected source excerpts document the wider work: skill loading, tool dispatch, context management, recovery and event persistence.
 
 | Entry | What to look at |
 |---|---|
@@ -37,9 +43,15 @@ The executable sample checks the original local prompt-cache key builder. Skill 
 | [Code tour](docs/code-tour.md) | 8 selected excerpts from the wider construction |
 | [Provenance](provenance.json) | Original paths, commits, hashes and documented redactions |
 
-## Run the sample
+**Stack across the project:** Python · OpenAI Agents SDK · skills / tools · prompt caching · Firestore · Cloud Tasks.
 
-Requires **Python 3.10+**, with no package installation or account setup.
+This public case study includes selected original code and an isolated runnable sample with synthetic data. Production integrations and customer data remain private. Original paths, commits, hashes and redactions are recorded in [provenance.json](provenance.json).
+
+<a id="run-the-sample"></a>
+
+## Run the component sample
+
+Run the original local prompt-cache key builder locally with synthetic data. Requires **Python 3.10+**, with no package installation or account setup.
 
 ```sh
 git clone https://github.com/nasoler123/ai-agent-harness.git
@@ -48,26 +60,18 @@ python3 -I demo.py
 python3 verify.py
 ```
 
-The sample runs offline with synthetic data; it rejects socket operations and external subprocesses. `verify.py` checks the result receipt, source hash, local links, instruction parity and credential patterns. These checks cover the published sample rather than the full production system.
-
 Expected observations:
 
 - Repeated inputs and the same skill set in a different order keep the same key.
 - Changing capabilities, channel or prompt content changes the key.
 - The demo makes no model request and does not measure cache hit rate.
 
-[Recorded local results](verification.json).
+The sample runs offline and rejects network connections and external subprocesses. `verify.py` checks local links, instruction parity, the source hash, credential patterns and the recorded results of the component checks. [Recorded local results](verification.json).
 
-## Stack in context
+## More from Chals AI
 
-Python · OpenAI Agents SDK · skills / tools · prompt caching · Firestore · Cloud Tasks.
+These projects cover my work across business automation, financial software, AI agents and data infrastructure.
 
-The stack describes the wider construction. The executable sample uses Python's standard library; the remaining integrations appear in the code tour.
-
-## Related work
-
-This case belongs to the evolution of **Chals AI**, from document automation and a financial product to agent tooling and managed data infrastructure. The cases overlap; they are not four separate companies.
-
-[Invoice Automation](https://github.com/nasoler123/invoice-automation) · [Financial Modeling SaaS](https://github.com/nasoler123/financial-modeling-saas) · [Data Platform and MCP](https://github.com/nasoler123/data-platform-mcp)
+[Data Platform and MCP](https://github.com/nasoler123/data-platform-mcp) · [Financial Modeling SaaS](https://github.com/nasoler123/financial-modeling-saas) · [Invoice Automation](https://github.com/nasoler123/invoice-automation)
 
 [Ignacio Soler](https://github.com/nasoler123) · [LinkedIn](https://www.linkedin.com/in/ignacio-soler-esteban/)
