@@ -10,13 +10,13 @@ Guided frontend demos with synthetic data: see the chat, custom agent configurat
 
 ### Custom agent creation · 85s
 
-![](docs/demos/custom-agents.mp4)
+https://github.com/user-attachments/assets/418023e3-7c39-4082-ba8b-140ba44dab4a
 
 [Open the full-screen demo](https://chalsai.com/demo.html?script=custom-agents&utm_source=github&utm_medium=portfolio&utm_campaign=ai-agent-harness) · [Download MP4](docs/demos/custom-agents.mp4)
 
 ### Memory and business context · 18s
 
-![](docs/demos/memory-brain.mp4)
+https://github.com/user-attachments/assets/f6010d59-6e71-4ab9-a506-86d2e1059547
 
 [Open the full-screen demo](https://chalsai.com/demo.html?script=memory-brain&utm_source=github&utm_medium=portfolio&utm_campaign=ai-agent-harness) · [Download MP4](docs/demos/memory-brain.mp4)
 

@@ -14,7 +14,8 @@
       "bytes": 373760,
       "codec": "h264",
       "width": 960,
-      "height": 600
+      "height": 600,
+      "github_attachment_url": "https://github.com/user-attachments/assets/418023e3-7c39-4082-ba8b-140ba44dab4a"
     },
     {
       "file": "memory-brain.mp4",
@@ -25,7 +26,8 @@
       "bytes": 194650,
       "codec": "h264",
       "width": 960,
-      "height": 600
+      "height": 600,
+      "github_attachment_url": "https://github.com/user-attachments/assets/f6010d59-6e71-4ab9-a506-86d2e1059547"
     }
   ]
 }
