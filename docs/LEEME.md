@@ -2,23 +2,13 @@
 
 Skills, tools, contexto, dispatch controlado, recuperación, caché y ejecución durable.
 
-## Ver el frontend
+## Ver el agente
 
-Demos guiadas del frontend con datos ficticios: chat, configuración de agentes y memoria del negocio. Son recorridos con guion de la generación anterior del producto; la implementación del harness se documenta más abajo.
+**Chals AI — AI Assistant for Google Sheets.** El asistente dentro de la interfaz de la hoja de cálculo. La muestra Python de este repositorio se centra en la construcción de claves de caché.
 
-### Creación de agentes personalizados · 85s
+[![Reproducir Chals AI — AI Assistant for Google Sheets](https://i.ytimg.com/vi/Oo4Bd8iGeUY/hqdefault.jpg)](https://www.youtube.com/watch?v=Oo4Bd8iGeUY)
 
-https://github.com/user-attachments/assets/418023e3-7c39-4082-ba8b-140ba44dab4a
-
-[Abrir la demo a pantalla completa](https://chalsai.com/demo.html?script=custom-agents&utm_source=github&utm_medium=portfolio&utm_campaign=ai-agent-harness) · [Descargar MP4](demos/custom-agents.mp4)
-
-### Memoria y contexto del negocio · 18s
-
-https://github.com/user-attachments/assets/f6010d59-6e71-4ab9-a506-86d2e1059547
-
-[Abrir la demo a pantalla completa](https://chalsai.com/demo.html?script=memory-brain&utm_source=github&utm_medium=portfolio&utm_campaign=ai-agent-harness) · [Descargar MP4](demos/memory-brain.mp4)
-
-[Procedencia de los vídeos](demos/manifest.json).
+[Ver en YouTube](https://www.youtube.com/watch?v=Oo4Bd8iGeUY) · [Procedencia del vídeo](demos/manifest.json).
 
 ## Qué demuestra este caso
 
